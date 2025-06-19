@@ -3,21 +3,22 @@ name = "nooffice"
 version = "0.1.0"
 description = "无需Office软件的文档转换工具集"
 readme = "README.md"
-requires-python = ">=3.11"
+requires-python = ""
 license = {text = "MIT"}
 authors = [
     {name = "作者姓名", email = "your.email@example.com"}
 ]
 dependencies = [
-    "rich>=13.0.0",
-    "python-pptx>=0.6.21",
-    "comtypes>=1.1.14",
+    "rich",
+    "python-pptx",
+    "comtypes",
+    "doc2docx",
 ]
 
 [project.optional-dependencies]
 dev = [
-    "pytest>=7.3.1",
-    "black>=23.3.0",
+    "pytest",
+    "black",
 ]
 
 [project.scripts]
@@ -25,7 +26,7 @@ ppt2pdf = "ppt2pdf.__main__:main"
 mkpdf = "mkpdf.__main__:main"
 
 [build-system]
-requires = ["setuptools>=61.0.0", "wheel"]
+requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools]
