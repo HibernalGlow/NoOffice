@@ -1,9 +1,9 @@
 [project]
 name = "nooffice"
-version = "0.1.0"
+version = "0.1.1"
 description = "无需Office软件的文档转换工具集"
 readme = "README.md"
-requires-python = ""
+requires-python = ">=3.11,<3.13"
 license = {text = "MIT"}
 authors = [
     {name = "作者姓名", email = "your.email@example.com"}
